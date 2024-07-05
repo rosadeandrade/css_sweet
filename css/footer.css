@@ -1,0 +1,118 @@
+footer{
+  margin: 1rem;  
+}
+
+.contact-form{
+    padding: 1rem;
+    margin: 0 1rem 0rem 1rem;
+    width: 20rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.form>button[type="submit"]{
+    width: 4rem;
+    background-color:gray ;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    height: 1.5rem;
+}
+.form>button[type="submit"]:hover{
+    background-color:rgb(39, 39, 39) ;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.company__info{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, rgba(24, 8, 8, 0.201) , rgba(250, 240, 240, 0.982));
+    flex-wrap: wrap;
+}
+
+/* logo and Address */
+.company__info__address{
+    display: flex;
+    align-items: center; /*vertical align*/
+    text-align: center;
+    justify-content: center;
+
+}
+.company__info__address--logo > figure > img{
+    
+    border-radius: 50%;
+    margin: 0.3rem;
+    padding: 0 0.5rem 0 0.5rem;
+    display: flex;
+}
+
+.company__info__address--text{
+    color: rgb(94, 93, 93);
+    font-size: 1.3rem;
+    width: 15rem;
+}
+
+/* social media */
+.company__info__socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1rem;
+    text-align: center;
+    width: 10rem;
+}
+.company__info__socialmedia--img{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.company__info__socialmedia--text{
+   
+    color: rgb(94, 93, 93);
+    font-weight: 900;
+}
+
+
+.company__info__socialmedia--img > figure > img{
+    width: 2rem;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+
+@media screen and (min-width: 320px){
+    .company__info__address--text{
+        font-size: 1rem;
+    }
+    .form{
+       width: 18rem;
+    }
+    
+    .contact-form>h3{
+        text-align: center;
+    }
+    .company__info__address--logo > figure>img{
+        width: 5rem;
+    }
+    .company__info__socialmedia--text{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .company__info__address--logo > figure > img{
+        width: 7rem;
+    }
+    .company__info__socialmedia--text{
+        font-size: 1.3rem;
+    }
+    .form{
+        width: 20rem;
+        
+    }
+}

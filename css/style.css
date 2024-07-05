@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Marck+Script&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTwo);
+}
+
+:root{
+    --fontOne: "Marck Script", cursive;
+    --fontTwo: "Cormorant", serif;
+}
